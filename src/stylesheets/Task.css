@@ -56,7 +56,7 @@
 /* tarea completada */
 
 .task-container.complete {
-    background-color: #5a01a7;
+    background-color: #01a78b;
     text-decoration: line-through;
 }
 
