@@ -13,11 +13,11 @@ body {
 }
 
 h1 {
-  color: #1b1b32;
-  font-size: 36px;
-  font-family: Roboto, sans-serif;
-  text-align: center;
-  margin: 20px 0;
+	color: #1b1b32;
+	font-size: 36px;
+	font-family: Roboto, sans-serif;
+	text-align: center;
+	margin: 20px 0;
 }
 
 .container-app-tasks {
@@ -31,9 +31,9 @@ h1 {
 
 .tasks-list-main {
 	width: 600px;
-  min-height: 500px;
-  background-color: #d0d0d5;
-  padding: 25px;
-  margin: 10px;
-  border-radius: 26px;
+	min-height: 500px;
+	background-color: #d0d0d5;
+	padding: 25px;
+	margin: 10px;
+	border-radius: 26px;
 }
