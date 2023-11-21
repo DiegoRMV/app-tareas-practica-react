@@ -1,0 +1,145 @@
+.task-container {
+    width: 500px;
+    min-height: 65px;
+    background-color: #1b1b32;
+    margin: 5px 0;
+    padding: 8px 15px 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/* colores */
+
+.task-container:nth-child(3n + 1){
+    background-color: #1b1b32;
+}
+
+.task-container:nth-child(3n + 2){
+    background-color: #2a2a40;
+}
+
+.task-container:nth-child(3n + 3){
+    background-color: #3b3b4f;
+}
+
+
+/* texto */
+
+.task-text {
+    width: 75%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* icono */
+
+.task-detail {
+    color: white;
+}
+
+.task-icon {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+/* tarea completada */
+
+.task-container.complete {
+    background-color: #5a01a7;
+    text-decoration: line-through;
+}
+
+
+
+/* modal */
+
+/*Efecto*/
+.modalmask {
+    position: fixed;
+    font-family: Roboto, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox{
+    width: 400px;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #000;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+    overflow-wrap: break-word;
+}
+
+/*Movimientos*/
+.movedown {
+    margin: 0 auto;
+}
+.rotate {
+    margin: 10% auto;
+    -webkit-transform: scale(-5,-5);
+    transform: scale(-5,-5);
+}
+.resize {
+    margin: 10% auto;
+    width:0;
+    height:0;
+ 
+}
+.modalmask:target .movedown{       
+    margin:10% auto;
+}
+.modalmask:target .rotate{     
+    transform: rotate(360deg) scale(1,1);
+        -webkit-transform: rotate(360deg) scale(1,1);
+}
+ 
+.modalmask:target .resize{
+    width:400px;
+    height:200px;
+}
+
+/*Boton de cerrar*/
+.close {
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+ 
+}
+ 
+.close:hover {
+    background: #58e7fa;
+    color:#222;
+}
